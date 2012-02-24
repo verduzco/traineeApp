@@ -8,6 +8,8 @@
       %th Country
       %th Zip Code
       %th Description
+      %th Edit
+      %th Delete
   - @cities.each do |city|
     %tr
       %th= city.id
@@ -17,5 +19,8 @@
       %th= city.country 
       %th= city.zip_code
       %th= city.description
+      %th= link_to 'Edit info', edit_city_path(city.id)
+      %th= link_to 'Delete info',delete_city_path(city.id)
 %br
 = button_to "Add new city", new_city_path
+= button_to "Back to index", "/"
