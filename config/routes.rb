@@ -3,6 +3,8 @@ TraineeApp::Application.routes.draw do
   # first created -> highest priority.
   
   root :to => "pages#index"
+  match "/about" => "pages#about"
+  match "/contact" => "pages#contact"
   match "/cities" => "cities#main"
   match "/cities/new" => "cities#new", :as => :new_city
   match "/cities/create" => "cities#create"
