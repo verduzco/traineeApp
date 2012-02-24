@@ -17,8 +17,8 @@
       %th= place.description
       %th= place.opening_schedule
       %th= place.closing_schedule
-      %th= link_to "Edit info"
-      %th= link_to "Delete info"
+      %th= link_to "Edit info", edit_place_path(place.id)
+      %th= link_to "Delete info", delete_place_path(place.id)
 
 = button_to "Add new place", new_place_path
 = button_to "Back to index", "/"
