@@ -1,0 +1,24 @@
+%table
+  %tbody
+    %tr
+      %th ID
+      %th Address
+      %th City
+      %th Description
+      %th Opening Schedule
+      %th Closing Schedule
+      %th Update
+      %th Delete
+  - @places.each do |place|
+    %tr
+      %th= place.id
+      %th= place.address
+      %th= place.city
+      %th= place.description
+      %th= place.opening_schedule
+      %th= place.closing_schedule
+      %th= link_to "Edit info"
+      %th= link_to "Delete info"
+
+= button_to "Add new place"
+= button_to "Back to index", "/"

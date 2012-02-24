@@ -9,6 +9,7 @@ TraineeApp::Application.routes.draw do
   match "/cities/:id/edit" => "cities#edit", :as => :edit_city
   match "/cities/:id/update" => "cities#update"
   match "/cities/:id/delete" => "cities#delete", :as => :delete_city
+  match "/places" => "places#main"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
