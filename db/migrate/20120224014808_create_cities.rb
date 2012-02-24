@@ -4,7 +4,7 @@ class CreateCities < ActiveRecord::Migration
       t.string :name
       t.string :population
       t.string :state
-      t.string :contry
+      t.string :country
       t.string :zip_code
       t.string :description
 

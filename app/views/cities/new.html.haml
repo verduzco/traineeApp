@@ -1,0 +1,20 @@
+= form_for @city, :url => "create" do |c|
+  = c.label :name
+  = c.text_field :name
+  %br
+  = c.label :population
+  = c.text_field :population
+  %br
+  = c.label :state
+  = c.text_field :state
+  %br
+  = c.label :country
+  = c.text_field :country
+  %br
+  = c.label :zip_code
+  = c.text_field :zip_code
+  %br
+  = c.label :description
+  = c.text_field :description
+  %br
+  = c.submit "Add city"
