@@ -1,0 +1,22 @@
+%table
+  %tbody
+    %tr
+      %th ID
+      %th Name
+      %th Population
+      %th State
+      %th Country
+      %th Zip Code
+      %th Description
+    - @cities.each do |city|
+      %th= city.name
+      %th= city.population
+      %th= city.state
+      %th= city.country
+      %th= city.zip_code
+      %th= city.desciption
+
+    = button_to "Add new city"
+
+
+
