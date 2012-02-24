@@ -5,6 +5,7 @@ TraineeApp::Application.routes.draw do
   root :to => "pages#index"
   match "/cities" => "cities#main"
   match "/cities/new" => "cities#new", :as => :new_city
+  match "/cities/create" => "cities#create"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
